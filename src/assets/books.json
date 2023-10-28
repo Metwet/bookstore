@@ -1,0 +1,166 @@
+{
+    "error": "0",
+    "total": "20",
+    "books": [
+    {
+    "title": "Architect Modern Web Applications with ASP.NET Core and Azure",
+    "subtitle": "",
+    "isbn13": "1001635859865",
+    "price": "$0.00",
+    "image": "https://itbook.store/img/books/1001635859865.png",
+    "url": "https://itbook.store/books/1001635859865"
+    },
+    {
+    "title": "Graph-Powered Machine Learning",
+    "subtitle": "",
+    "isbn13": "9781617295645",
+    "price": "$49.99",
+    "image": "https://itbook.store/img/books/9781617295645.png",
+    "url": "https://itbook.store/books/9781617295645"
+    },
+    {
+    "title": "Real-World Cryptography",
+    "subtitle": "",
+    "isbn13": "9781617296710",
+    "price": "$55.81",
+    "image": "https://itbook.store/img/books/9781617296710.png",
+    "url": "https://itbook.store/books/9781617296710"
+    },
+    {
+    "title": "Deep Learning with Python, 2nd Edition",
+    "subtitle": "",
+    "isbn13": "9781617296864",
+    "price": "$53.99",
+    "image": "https://itbook.store/img/books/9781617296864.png",
+    "url": "https://itbook.store/books/9781617296864"
+    },
+    {
+    "title": "Pandas in Action",
+    "subtitle": "",
+    "isbn13": "9781617297434",
+    "price": "$55.43",
+    "image": "https://itbook.store/img/books/9781617297434.png",
+    "url": "https://itbook.store/books/9781617297434"
+    },
+    {
+    "title": "Pipeline as Code",
+    "subtitle": "Continuous Delivery with Jenkins, Kubernetes, and Terraform",
+    "isbn13": "9781617297540",
+    "price": "$53.75",
+    "image": "https://itbook.store/img/books/9781617297540.png",
+    "url": "https://itbook.store/books/9781617297540"
+    },
+    {
+    "title": "Microservices in .NET, 2nd Edition",
+    "subtitle": "",
+    "isbn13": "9781617297922",
+    "price": "$59.99",
+    "image": "https://itbook.store/img/books/9781617297922.png",
+    "url": "https://itbook.store/books/9781617297922"
+    },
+    {
+    "title": "Five Lines of Code",
+    "subtitle": "How and when to refactor",
+    "isbn13": "9781617298318",
+    "price": "$44.79",
+    "image": "https://itbook.store/img/books/9781617298318.png",
+    "url": "https://itbook.store/books/9781617298318"
+    },
+    {
+    "title": "The Programmer's Brain",
+    "subtitle": "What every programmer needs to know about cognition",
+    "isbn13": "9781617298677",
+    "price": "$44.79",
+    "image": "https://itbook.store/img/books/9781617298677.png",
+    "url": "https://itbook.store/books/9781617298677"
+    },
+    {
+    "title": "Spring Start Here",
+    "subtitle": "Learn what you need and learn it well",
+    "isbn13": "9781617298691",
+    "price": "$49.99",
+    "image": "https://itbook.store/img/books/9781617298691.png",
+    "url": "https://itbook.store/books/9781617298691"
+    },
+    {
+    "title": "Conversational AI",
+    "subtitle": "Chatbots that work",
+    "isbn13": "9781617298837",
+    "price": "$44.80",
+    "image": "https://itbook.store/img/books/9781617298837.png",
+    "url": "https://itbook.store/books/9781617298837"
+    },
+    {
+    "title": "HackSpace Magazine: Issue 47",
+    "subtitle": "October 2021",
+    "isbn13": "1001635431011",
+    "price": "$0.00",
+    "image": "https://itbook.store/img/books/1001635431011.png",
+    "url": "https://itbook.store/books/1001635431011"
+    },
+    {
+    "title": "Beginning Excel 2019",
+    "subtitle": "",
+    "isbn13": "1001635431098",
+    "price": "$0.00",
+    "image": "https://itbook.store/img/books/1001635431098.png",
+    "url": "https://itbook.store/books/1001635431098"
+    },
+    {
+    "title": "Hands-on Azure Functions with C#",
+    "subtitle": "Build Function as a Service (FaaS) Solutions",
+    "isbn13": "9781484271216",
+    "price": "$43.65",
+    "image": "https://itbook.store/img/books/9781484271216.png",
+    "url": "https://itbook.store/books/9781484271216"
+    },
+    {
+    "title": "MERN Projects for Beginners",
+    "subtitle": "Create Five Social Web Apps Using MongoDB, Express.js, React, and Node",
+    "isbn13": "9781484271377",
+    "price": "$40.99",
+    "image": "https://itbook.store/img/books/9781484271377.png",
+    "url": "https://itbook.store/books/9781484271377"
+    },
+    {
+    "title": "Pro Java Microservices with Quarkus and Kubernetes",
+    "subtitle": "A Hands-on Guide",
+    "isbn13": "9781484271698",
+    "price": "$43.29",
+    "image": "https://itbook.store/img/books/9781484271698.png",
+    "url": "https://itbook.store/books/9781484271698"
+    },
+    {
+    "title": "Systematic Cloud Migration",
+    "subtitle": "A Hands-On Guide to Architecture, Design, and Technical Implementation",
+    "isbn13": "9781484272510",
+    "price": "$37.39",
+    "image": "https://itbook.store/img/books/9781484272510.png",
+    "url": "https://itbook.store/books/9781484272510"
+    },
+    {
+    "title": "Performance Testing",
+    "subtitle": "An ISTQB Certified Tester Foundation Level Specialist Certification Review",
+    "isbn13": "9781484272541",
+    "price": "$44.74",
+    "image": "https://itbook.store/img/books/9781484272541.png",
+    "url": "https://itbook.store/books/9781484272541"
+    },
+    {
+    "title": "Simple and Efficient Programming with C#",
+    "subtitle": "Skills to Build Applications with Visual Studio and .NET",
+    "isbn13": "9781484273210",
+    "price": "$37.74",
+    "image": "https://itbook.store/img/books/9781484273210.png",
+    "url": "https://itbook.store/books/9781484273210"
+    },
+    {
+    "title": "Pro Azure Administration and Automation",
+    "subtitle": "A Comprehensive Guide to Successful Cloud Management",
+    "isbn13": "9781484273241",
+    "price": "$49.99",
+    "image": "https://itbook.store/img/books/9781484273241.png",
+    "url": "https://itbook.store/books/9781484273241"
+    }
+    ]
+}

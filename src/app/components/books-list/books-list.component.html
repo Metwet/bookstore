@@ -1,0 +1,17 @@
+<div class="books-list">
+    <mat-card *ngFor="let book of books" class="book-card">
+        <div class="img__block">
+            <img [src]="book.image" alt="{{ book.title }}" class="cover"/>
+        </div>
+        <mat-card-content class="content">
+            <mat-card-title>{{ book.title }}</mat-card-title>
+            <mat-card-subtitle>{{ book.subtitle }}</mat-card-subtitle>
+            <p>Артикул: {{ book.isbn13 }}</p>
+            <p>Цена: {{ book.price }}</p>
+        </mat-card-content>
+        <mat-card-actions class="btns">
+            <button mat-raised-button color="primary">В коризну</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+  
