@@ -1,0 +1,16 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.search-form {
+    width: 500px;
+}
+
+.sort {
+    display: flex;
+    gap: 40px;
+}

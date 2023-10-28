@@ -1,1 +1,13 @@
+<div class="toolbar">
+    <div class="search">
+        <mat-form-field class="search-form">
+            <mat-label>Поиск</mat-label>
+            <input matInput class="search-input" placeholder="по названию или описанию">
+        </mat-form-field>
+    </div>
+    <div class="sort">
+        <button mat-stroked-button color="primary" (click)="sortBooksByTitle()" class="btn">Сортировать по названию</button>
+        <button mat-stroked-button color="primary" (click)="sortBooksByPrice()" class="btn">Сортировать по цене</button>
+    </div>
+</div>
 <app-books-list [books]="books"></app-books-list>
