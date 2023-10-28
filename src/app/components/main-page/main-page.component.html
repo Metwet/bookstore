@@ -2,7 +2,7 @@
     <div class="search">
         <mat-form-field class="search-form">
             <mat-label>Поиск</mat-label>
-            <input matInput class="search-input" placeholder="по названию или описанию">
+            <input matInput class="search-input" placeholder="по названию или описанию" [(ngModel)]="searchQuery" (ngModelChange)="searchBooks()">
         </mat-form-field>
     </div>
     <div class="sort">

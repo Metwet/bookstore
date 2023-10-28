@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BooksListComponent } from './components/books-list/books-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './modules/material/material.module';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainPageComponent } from './components/main-page/main-page.component';
 
@@ -21,9 +22,10 @@ import { MainPageComponent } from './components/main-page/main-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

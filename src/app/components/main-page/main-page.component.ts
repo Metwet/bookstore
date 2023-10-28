@@ -11,15 +11,18 @@ export class MainPageComponent {
   constructor(private booksService: BooksService){}
 
   books: Book[] = [];
+  originBooks: Book[] = [];
 
   ngOnInit(): void {
     this.booksService.getBooks().subscribe((data)=>{
       this.books = data;
+      this.originBooks = data;
     });
   }
 
   isTitleSortedAscending: boolean = true;
   isPriceSortedAscending: boolean = true;
+  searchQuery: string = '';
 
   sortBooksByTitle(){
     this.isTitleSortedAscending = !this.isTitleSortedAscending;
@@ -51,5 +54,15 @@ export class MainPageComponent {
       }
       return 0;
     })
+  }
+
+  searchBooks():void {
+    if(this.searchQuery.trim() === ''){
+      this.books = this.originBooks;
+    } else {
+      this.books = this.originBooks.filter((book)=>
+        book.title.toLowerCase().includes(this.searchQuery.toLowerCase()) || book.subtitle.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    }
   }
 }
