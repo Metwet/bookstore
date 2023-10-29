@@ -3,6 +3,10 @@
         <div class="logo mat-headline-6">
             Читающий Магадан
         </div>
+        <div class="nav" *ngIf="isLoggedIn()">
+            <button mat-stroked-button color="primary" (click)="goToMain()">Главная страница</button>
+            <button mat-stroked-button color="primary" (click)="goToCart()">Моя корзина</button>
+        </div>
         <div class="btns" *ngIf="isLoggedIn()">
             <span class="username">Пользователь: {{getUserName()}}</span>
             <button mat-stroked-button color="warn" (click)="logout()">Выйти</button>

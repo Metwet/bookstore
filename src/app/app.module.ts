@@ -14,6 +14,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { BookPageComponent } from './components/book-page/book-page.component';
+import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { CartButtonComponent } from './components/cart-button/cart-button.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { BookPageComponent } from './components/book-page/book-page.component';
     HeaderComponent,
     SignupComponent,
     SigninComponent,
-    BookPageComponent
+    BookPageComponent,
+    CartPageComponent,
+    CartButtonComponent
   ],
   imports: [
     BrowserModule,

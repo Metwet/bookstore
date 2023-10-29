@@ -1,0 +1,19 @@
+@import '/src/styles.scss';
+
+.cart-sum {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    padding: 30px;
+    background: $BackgroundColor;
+    margin: 40px auto;
+    border: 1px solid rgb(172, 185, 198);
+    border-radius: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cart-sum-space {
+    height: 150px;
+}

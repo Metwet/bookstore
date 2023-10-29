@@ -10,7 +10,7 @@
             <p>Цена: {{ book.price }}</p>
         </mat-card-content>
         <mat-card-actions class="btns">
-            <button mat-raised-button color="primary">Добавить в коризну</button>
+            <app-cart-button [book]="book"></app-cart-button>
         </mat-card-actions>
     </mat-card>
 </div>

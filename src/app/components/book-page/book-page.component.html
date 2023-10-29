@@ -1,16 +1,16 @@
-<div class="book__container">
+<div class="book__container" *ngIf="book">
     <button mat-stroked-button class="back-btn" (click)="goBack()">Вернуться назад</button>
     <div class="book__content">
         <div class="img__block">
-            <img [src]="book?.image" alt="book?.title">
+            <img [src]="book.image" alt="book?.title">
         </div>
         <div class="book__details">
-            <h3 class="title">{{book?.title}}</h3>
-            <p class="subtitle">{{book?.subtitle}}</p>
-            <p class="isbn">Артикул: {{ book?.isbn13 }}</p>
-            <p class="price">Цена: {{ book?.price }}</p>
+            <h3 class="title">{{book.title}}</h3>
+            <p class="subtitle">{{book.subtitle}}</p>
+            <p class="isbn">Артикул: {{ book.isbn13 }}</p>
+            <p class="price">Цена: {{ book.price }}</p>
             <div class="actions">
-                <button mat-raised-button color="primary">Добавить в коризну</button>
+                <app-cart-button [book]="book"></app-cart-button>
             </div>
         </div>
     </div>

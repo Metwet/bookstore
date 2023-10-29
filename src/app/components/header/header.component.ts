@@ -23,4 +23,12 @@ export class HeaderComponent {
     const user = this.authService.getCurrentUser();
     return user ? user.username : '';
   }
+
+  goToMain():void {
+    this.router.navigate(['/main']);
+  }
+
+  goToCart():void {
+    this.router.navigate(['/cart']);
+  }
 }

@@ -1,0 +1,10 @@
+<div *ngIf="quantity > 0; else addButton">
+    <button mat-raised-button color="primary" (click)="removeFromCart()">-</button>
+    <span class="quantity">{{ quantity }}</span>
+    <button mat-raised-button color="primary" (click)="addBookInCart()">+</button>
+    <div class="added-book" (click)="goToCart()">Книга в корзине!</div>
+</div>
+<ng-template #addButton>
+    <button mat-raised-button color="primary" (click)="addBookInCart()">Добавить в корзину</button>
+</ng-template>
+  
