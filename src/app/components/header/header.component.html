@@ -1,0 +1,12 @@
+<header class="header">
+    <div class="container header__container">
+        <div class="logo mat-headline-6">
+            Читающий Магадан
+        </div>
+        <div class="btns" *ngIf="isLoggedIn()">
+            <span class="username">Пользователь: {{getUserName()}}</span>
+            <button mat-stroked-button color="warn" (click)="logout()">Выйти</button>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+</header>

@@ -1,0 +1,47 @@
+<div class="reg__container">
+    <mat-card class="reg__card">
+        <mat-card-header>
+          <mat-card-title>Регистрация</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <form [formGroup]="registerForm" (submit)="register()">
+            <div>
+                <mat-form-field class="reg__field">
+                    <input matInput placeholder="Имя пользователя" name="username" formControlName="username" required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field class="reg__field">
+                    <input matInput type="email" placeholder="Email" name="email" formControlName="email" required (focus)="showEmailRequirements = true" (blur)="showEmailRequirements = false">
+                </mat-form-field>
+                <mat-card-subtitle *ngIf="showEmailRequirements">Например, user@example.com</mat-card-subtitle>
+            </div>
+            <div>
+                <mat-form-field class="reg__field">
+                    <input matInput type="password" placeholder="Пароль" name="password" formControlName="password" required (focus)="showPasswordRequirements = true" (blur)="showPasswordRequirements = false">
+                </mat-form-field>
+            </div>
+            <div class="password-requirements" *ngIf="showPasswordRequirements">
+                <mat-card-subtitle>Минимум 8 символов, обязательно одна заглавная буква и одна цифра.</mat-card-subtitle>
+            </div>
+            <div *ngIf="registerForm.controls['password'].value.length > 0">
+                <mat-form-field class="reg__field">
+                  <input matInput type="password" placeholder="Повторите пароль" formControlName="repeatPassword" required>
+                </mat-form-field>
+            </div>
+            <div *ngIf="registerForm.hasError('passwordMismatch') && registerForm.controls['repeatPassword'].dirty">
+                <mat-card-subtitle>
+                    Пароли не совпадают.
+                </mat-card-subtitle>          
+            </div>
+            <div class="btn">
+                <button mat-raised-button color="primary" type="submit" [disabled]="!registerForm.valid">Зарегистрироваться</button>
+            </div>
+            <div class="btn">
+                <button mat-raised-button color="accent" routerLink="/signin">Войти</button>
+            </div>
+          </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+  

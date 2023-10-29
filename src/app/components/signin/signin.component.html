@@ -1,0 +1,29 @@
+<div class="login__container">
+    <mat-card class="login__card">
+        <mat-card-header>
+          <mat-card-title>Войти</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <form [formGroup]="loginForm" (submit)="login()">
+            <div>
+                <mat-form-field class="login__field">
+                    <input matInput type="email" placeholder="Email" name="email" formControlName="email" required (blur)="checkUserExists()">
+                </mat-form-field>
+                <mat-card-subtitle *ngIf="showUserExistsMessage" class="showUserExistsMessage">Пользователь с таким email существует!</mat-card-subtitle>
+            </div>
+            <div>
+                <mat-form-field class="login__field">
+                    <input matInput type="password" placeholder="Пароль" name="password" formControlName="password" required>
+                </mat-form-field>
+                <mat-card-subtitle *ngIf="wrongPasswordMessageVisible" class="wrongPasswordMessageVisible">Пароль или email введены неверно.</mat-card-subtitle>
+            </div>
+            <div class="btn">
+                <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Войти</button>
+            </div>
+            <div class="btn">
+                <button mat-raised-button color="accent" routerLink="/signup">Регистрация</button>
+            </div>
+          </form>
+        </mat-card-content>
+    </mat-card>
+</div>

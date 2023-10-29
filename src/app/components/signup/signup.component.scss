@@ -1,0 +1,24 @@
+.reg__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reg__card {
+    max-width: 400px;
+    width: 100%;
+}
+
+.reg__field {
+    width: 100%;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+.btn button {
+    width: 100%;
+}

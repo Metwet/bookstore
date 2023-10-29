@@ -10,13 +10,19 @@ import { MaterialModule } from './modules/material/material.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksListComponent,
-    MainPageComponent
+    MainPageComponent,
+    HeaderComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
