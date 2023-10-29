@@ -1,4 +1,7 @@
 <app-books-list [books]="books"></app-books-list>
+<div class="empty" *ngIf="!books.length">
+    Корзина пуста
+</div>
 <div class="cart-sum">
     <p>Итого: {{ calculateTotalCost() | currency }}</p>
 </div>
