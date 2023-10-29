@@ -1,3 +1,9 @@
+@import '/src/styles.scss';
+
+.header {
+    background-color: $BackgroundColor;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;

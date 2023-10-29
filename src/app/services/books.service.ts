@@ -31,4 +31,8 @@ export class BooksService {
       return of(this.books);
     }
   }
+
+  getBookByISBN(isbn: string): Book | undefined {
+    return this.books.find((book)=> book.isbn13 === isbn);
+  }
 }

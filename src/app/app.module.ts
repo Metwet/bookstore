@@ -13,6 +13,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { BookPageComponent } from './components/book-page/book-page.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SigninComponent } from './components/signin/signin.component';
     MainPageComponent,
     HeaderComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    BookPageComponent
   ],
   imports: [
     BrowserModule,

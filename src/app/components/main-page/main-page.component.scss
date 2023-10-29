@@ -1,5 +1,6 @@
 .toolbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -7,11 +8,12 @@
 }
 
 .search-form {
-    width: 500px;
+    width: 320px;
     // background-color: rgb(248, 251, 255);
 }
 
 .sort {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }

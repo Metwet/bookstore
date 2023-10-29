@@ -1,3 +1,5 @@
+@import '/src/styles.scss';
+
 .books-list {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +10,7 @@
 .book-card {
     max-width: 300px;
     width: 100%;
-    background-color: rgb(248, 251, 255);
+    background-color: $BackgroundColor;
 }
 
 .img__block {
@@ -23,7 +25,8 @@
 }
 
 .content {
-    background-color: rgb(248, 251, 255);
+    background-color: $BackgroundColor;
+    cursor: pointer;
 }
 
 .btns {
