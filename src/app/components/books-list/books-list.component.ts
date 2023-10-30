@@ -10,9 +10,22 @@ import { Book } from 'src/app/models/book.model';
 export class BooksListComponent {
   @Input() books!: Book[];
 
+  isCardView: boolean = false;
+  isTableView: boolean = true;
+
   constructor (private router: Router) {};
 
   titleClick(isbn: string): void {
     this.router.navigate(['/book', isbn]);
+  }
+
+  switchToCardView(){
+    this.isCardView = true;
+    this.isTableView = false;
+  }
+
+  switchToTableView(){
+    this.isCardView = false;
+    this.isTableView = true;
   }
 }

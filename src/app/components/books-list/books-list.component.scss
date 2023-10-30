@@ -1,5 +1,12 @@
 @import '/src/styles.scss';
 
+.theme-btn{
+    margin: 20px;
+    margin-top: 0;
+}
+
+// list
+
 .books-list {
     display: flex;
     flex-wrap: wrap;
@@ -31,4 +38,37 @@
 
 .btns {
     margin-top: auto;
+}
+
+// table
+
+.books-table {
+    border-top: 1px solid #3f51b5;
+    border-bottom: 1px solid #3f51b5;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #3f51b5;
+    border-bottom: 1px solid #3f51b5;
+}
+
+.row > * {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.left-col {
+    cursor: pointer;
+}
+
+.cover-col {
+    width: 100px;
+}
+
+.btns-col {
+    width: 200px;
 }

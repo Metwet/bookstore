@@ -1,4 +1,6 @@
-<div class="books-list">
+<button mat-stroked-button color="accent" (click)="switchToCardView()" *ngIf="isTableView" class="theme-btn">Вид в виде карточек</button>
+<button mat-stroked-button color="accent" (click)="switchToTableView()" *ngIf="isCardView" class="theme-btn">Вид в виде таблицы</button>
+<div class="books-list" *ngIf="isCardView">
     <mat-card *ngFor="let book of books" class="book-card">
         <div class="img__block">
             <img [src]="book.image" alt="{{ book.title }}" class="cover"/>
@@ -14,4 +16,24 @@
         </mat-card-actions>
     </mat-card>
 </div>
-  
+<div class="books-table" *ngIf="isTableView">
+    <div class="row" *ngFor="let book of books">
+        <div class="left-col" (click)="titleClick(book.isbn13)">
+            <div class="cover-col">
+                <img [src]="book.image" alt="{{ book.title }}" class="cover"/>
+            </div>
+            <div class="title-col">
+                {{ book.title }}
+            </div>
+            <div class="subtitle-col">
+                {{ book.subtitle }}
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="price-col">Цена: {{ book.price }}</div>
+            <div class="btns-col">
+                <app-cart-button [book]="book"></app-cart-button>
+            </div>
+        </div>
+    </div>
+</div>
