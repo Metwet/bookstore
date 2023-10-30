@@ -1,11 +1,11 @@
-<app-books-list [books]="books"></app-books-list>
+<app-books-list [books]="books" *ngIf="books.length"></app-books-list>
 <div class="empty" *ngIf="!books.length">
     Корзина пуста
 </div>
-<div class="cart-sum">
+<div class="cart-sum" *ngIf="books.length">
     <p>Итого: {{ calculateTotalCost() | currency }}</p>
 </div>
-<div class="cart-sum-space">
+<div class="cart-sum-space" *ngIf="books.length">
     <p></p>
 </div>
   
