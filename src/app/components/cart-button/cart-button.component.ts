@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Book } from 'src/app/models/book.model';
 import { CartService } from 'src/app/services/cart.service';
@@ -8,7 +8,7 @@ import { CartService } from 'src/app/services/cart.service';
   templateUrl: './cart-button.component.html',
   styleUrls: ['./cart-button.component.scss']
 })
-export class CartButtonComponent {
+export class CartButtonComponent implements OnInit {
   @Input() book!: Book;
 
   constructor(private cartService: CartService, private router: Router){}

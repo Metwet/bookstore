@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/models/book.model';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -7,7 +7,7 @@ import { CartService } from 'src/app/services/cart.service';
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.scss']
 })
-export class CartPageComponent {
+export class CartPageComponent implements OnInit{
   books: Book[] = [];
 
   constructor(private cartService: CartService){};

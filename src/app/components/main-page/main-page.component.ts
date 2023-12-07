@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/models/book.model';
 import { BooksService } from 'src/app/services/books.service';
 
@@ -7,7 +7,7 @@ import { BooksService } from 'src/app/services/books.service';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss']
 })
-export class MainPageComponent {
+export class MainPageComponent implements OnInit{
   constructor(private booksService: BooksService){}
 
   books: Book[] = [];
